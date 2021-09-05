@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
+
 const Star = ({ index, value, color }) => {
   return (
     <span>
       <i
-        style={{ color }}
+        style={{ color: color || '#ffa534' }}
         className={
           value >= index + 1
             ? 'fas fa-star'
@@ -13,6 +15,12 @@ const Star = ({ index, value, color }) => {
       ></i>
     </span>
   );
+};
+
+Star.propTypes = {
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+  color: PropTypes.string,
 };
 
 export default Star;
