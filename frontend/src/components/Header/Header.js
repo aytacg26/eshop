@@ -11,8 +11,11 @@ const Header = () => {
             <Navbar.Brand>eShop Cyprus</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ml-auto'>
+          <Navbar.Collapse
+            id='basic-navbar-nav'
+            className='justify-content-end'
+          >
+            <Nav className='ml-auto '>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i>
