@@ -19,7 +19,7 @@ const Star = ({ index, value, color }) => {
 
 Star.propTypes = {
   index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
+  value: PropTypes.number,
   color: PropTypes.string,
 };
 

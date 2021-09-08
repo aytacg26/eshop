@@ -7,9 +7,9 @@ import axios from 'axios';
 
 const ProductScreen = ({ match }) => {
   const [product, setProduct] = useState({});
-  const productId = match.params.id;
 
   useEffect(() => {
+    const productId = match.params.id;
     const fetchProduct = async (pId) => {
       const res = await axios.get(`/api/products/${pId}`);
       const product = res.data;
@@ -18,7 +18,7 @@ const ProductScreen = ({ match }) => {
     };
 
     fetchProduct(productId);
-  }, [productId]);
+  }, [match.params.id]);
 
   return (
     <Fragment>

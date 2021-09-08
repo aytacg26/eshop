@@ -4,9 +4,10 @@ const products = require('./data/products');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('API is running...');
+  res.send('API is running at port 5000');
 });
 
+//Just for frontend tests (for components that fetches data).
 app.get('/api/products', (req, res) => {
   res.json(products);
 });
