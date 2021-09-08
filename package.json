@@ -29,7 +29,8 @@
   "homepage": "https://github.com/aytacg26/eshop#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
