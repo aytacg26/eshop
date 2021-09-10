@@ -34,6 +34,7 @@ const orderSchema = mongoose.Schema(
       required: true,
     },
     paymentResult: {
+      //will come from PayPal
       id: { type: String },
       status: { type: String },
       update_time: { type: String },
@@ -42,17 +43,17 @@ const orderSchema = mongoose.Schema(
     taxPrice: {
       type: Number,
       required: true,
-      default: 0,
+      default: 0.0,
     },
     shippingPrice: {
       type: Number,
       required: true,
-      default: 0,
+      default: 0.0,
     },
     totalPrice: {
       type: Number,
       required: true,
-      default: 0,
+      default: 0.0,
     },
     isPaid: {
       type: Boolean,
